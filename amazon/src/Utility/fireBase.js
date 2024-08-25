@@ -1,3 +1,5 @@
+const API_KEY = process.env.REACT_APP_API_KEY;
+
 import firebase from "firebase/compat/app";
 //To use the authontication service
 import { getAuth } from "firebase/auth";
@@ -8,9 +10,8 @@ import { doc, onSnapshot, collection, query, where } from "firebase/firestore";
 import "firebase/compat/auth";
 // Your web app's Firebase configuration
 
-
 const firebaseConfig = {
-  apiKey: "AIzaSyBlTKyiuejOgqsdNbC8v6ObRtbye-_yR1o",
+  apiKey: API_KEY,
   authDomain: "project-a1229.firebaseapp.com",
   projectId: "project-a1229",
   storageBucket: "project-a1229.appspot.com",
